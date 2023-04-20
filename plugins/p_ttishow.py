@@ -55,8 +55,8 @@ async def save_group(bot, message):
                         pass
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/5104288cec4e13769a882.mp4",                                               
-                                                 caption=f'<b>ʜᴇʏ, {u.mention} 👋🏻\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴏᴜʀ ɢʀᴏᴜᴘ {message.chat.title}\n\nʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ / ᴀɴɪᴍᴇꜱ ᴇᴛᴄ. ꜰʀᴏᴍ ʜᴇʀᴇ. ᴇɴᴊᴏʏ😉.\n\n<b>┏≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs</b>\n┣ <b>ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ›› @Technical_Help_Support_Bot</b></code>\n<b>┗≫ ғᴏʟʟᴏᴡ ɢʀᴏᴜᴘ ʀᴜʟᴇs</b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('➡️ɢʀᴏᴜᴘ ʀᴜʟᴇs⬅️', url='https://www.youtube.com/@Anuragtechnical') ] ] )
+                                                 caption=f'<b>හායි, {u.mention} 👋🏻\nසාදරයෙන් පිලිගන්නවා {message.chat.title}\n\nඔයාට අපෙන්  සිංහළ සබ් ඇතුලත් ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ ඔන්ලයින් බලන්න ඩිරෙක්ට් , ටෙලිග්‍රෑම් ඩවුන්ලෝඩ් කරගන්න පුළුවන් ලේසියෙන්ම.😉\N උදව් ඕන නම් පහල Button Click කරන්න 👇</b',
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🏆 Channel 🏆', url='https://t.me/CineSubzMovies') ] ] )
                 )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
