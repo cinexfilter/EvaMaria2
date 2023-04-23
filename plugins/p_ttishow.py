@@ -56,7 +56,12 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://telegra.ph/file/7d9687fbe688ef7ecb8ea.mp4",                                               
                                                  caption=f'<b>හායි, {u.mention} 👋🏻\nසාදරයෙන් පිලිගන්නවා {message.chat.title}\n\nඔයාට අපෙන්  සිංහළ සබ් ඇතුලත් ᴍᴏᴠɪᴇꜱ / ꜱᴇʀɪᴇꜱ ඔන්ලයින් බලන්න ඩිරෙක්ට් , ටෙලිග්‍රෑම් ඩවුන්ලෝඩ් කරගන්න පුළුවන් ලේසියෙන්ම.😉</b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🏆 Channel 🏆', url='https://t.me/CineSubzMovies') ] ] )
+                                                 reply_markup=InlineKeyboardMarkup( 
+                                                     
+                                                     [ [ InlineKeyboardButton('🏆 Channel 🏆', url='https://t.me/CineSubzMovies'),[ InlineKeyboardButton('🏆 Group 🏆', url='https://t.me/CineSubzChatNew') ] ] 
+                                                                                  
+                                                                                  
+                                                                                  )
                 )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
